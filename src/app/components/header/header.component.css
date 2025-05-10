@@ -1,0 +1,148 @@
+/* Header */
+.header {
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  color: white;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Container */
+.header .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60px;
+}
+
+/* Logo Image */
+.logo-img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(1.2);
+}
+
+/* Logo with Brand Text */
+.header .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.header .logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* Brand Text Styling */
+.brand-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+margin: 10px;
+  font-weight: 600;
+  color: #f9d342;
+  letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.header .nav-links {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.header .nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+.header .nav-links a:hover,
+.header .nav-links a.active {
+  color: #f9d342;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+  }
+
+  .header .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+  }
+
+  .header .nav-links.show {
+    display: flex;
+    position: absolute;
+    top: 64px;
+    right: 0;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+/* Mobile Menu Toggle Button */
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: #000;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+  color: #f9d342;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    position: absolute;
+    color: #f9d342;
+    top: 0.9rem;
+    right: 1.2rem;
+    z-index: 1100;
+  }
+}
+
+/* Prevent text selection on common interactive elements */
+.header,
+.header .logo,
+.header .logo a,
+.header .nav-links a,
+.menu-toggle {
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none;     /* IE 10+ */
+}
+
+
+

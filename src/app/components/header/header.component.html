@@ -1,0 +1,21 @@
+<header class="header">
+  <div class="container">
+    <div class="logo">
+      <a routerLink="/">
+        <img src="projex1.png" alt="Projex Logo" class="logo-img" />
+        <span class="brand-text">Projex</span>
+      </a>
+    </div>
+
+    <!-- Mobile menu toggle icon -->
+    <div class="menu-toggle" (click)="toggleMenu()">&#9776;</div>
+
+    <!-- Navigation Links -->
+    <nav class="nav-links" [ngClass]="{ 'show': isMenuOpen }">
+      <a routerLink="/" routerLinkActive="active" (click)="closeMenu()">Home</a>
+      <a routerLink="/about" routerLinkActive="active" (click)="closeMenu()">About</a>
+      <a routerLink="/projects" routerLinkActive="active" (click)="closeMenu()">Projects</a>
+      <a routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact</a>
+    </nav>
+  </div>
+</header>
