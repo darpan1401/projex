@@ -1,4 +1,4 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 
 declare const AOS: any;
@@ -9,14 +9,6 @@ declare const AOS: any;
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements AfterViewInit {
-  title = 'projex';
-
-  ngAfterViewInit(): void {
-    AOS.init({
-      duration: 1000,
-      once: true,
-      easing: 'ease-in-out'
-    });
-  }
+export class HomeComponent  {
+  
 }

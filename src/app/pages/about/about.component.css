@@ -1,0 +1,222 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f0f0f;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 0;
+}
+
+/* Grid Layout */
+.about-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.about-grid.reverse {
+  flex-direction: row-reverse;
+}
+
+/* About Image */
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  max-height: 500px;
+}
+
+/* Content Box */
+.about-content {
+  flex: 1;
+  padding: 30px;
+  border-radius: 20px;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-content.full {
+  flex: 1 1 100%;
+}
+
+/* Headings */
+.about-content h2.highlight {
+  color: #00d4ff;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.about-content h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph */
+.about-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+/* Stats */
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.stats div {
+  text-align: center;
+}
+
+.stats strong {
+  display: block;
+  font-size: 28px;
+  color: #ffb84d;
+}
+
+.stats span {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Features List */
+.features {
+  list-style: none;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #a0ffe6;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+/* Tech Stack */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.tech-stack span {
+  background: #1a1a1a;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #00d4ff;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid #00d4ff;
+}
+
+/* Quote */
+.quote {
+  margin-top: 20px;
+  padding: 15px 20px;
+  font-style: italic;
+  font-size: 16px;
+  border-left: 4px solid #00d4ff;
+  background-color: rgba(0, 212, 255, 0.1);
+  color: #a0f8ff;
+  border-radius: 8px;
+}
+
+/* Button */
+.btn-gradient {
+  display: inline-block;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  margin: 0 auto; /* Centering the button */
+  text-align: center;
+}
+
+.btn-gradient:hover {
+  transform: scale(1.05);
+}
+
+/* Logo Styling */
+.logo img {
+  width: 100%;
+  max-width: 150px; /* Set a max size for mobile */
+  height: auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .about-content,
+  .about-image {
+    width: 100%;
+  }
+
+  .about-content {
+    padding: 20px;
+    text-align: center; /* Centering the text */
+  }
+
+  .about-content h3 {
+    font-size: 22px;
+  }
+
+  .tech-stack span {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .quote {
+    font-size: 15px;
+  }
+
+  /* Adjust logo size for mobile */
+  .logo img {
+    max-width: 120px;
+  }
+
+  /* Center "Explore Projects" button on mobile */
+  .about-content .btn-gradient {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  /* Tech Stack center alignment */
+  .tech-stack {
+    justify-content: center;
+  }
+}

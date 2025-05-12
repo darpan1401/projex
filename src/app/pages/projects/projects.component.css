@@ -1,0 +1,136 @@
+/* Projects Section */
+.projects-section {
+  padding: 80px 0;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #00d4ff;
+}
+.section-subtitle {
+  text-align: center;
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 50px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+}
+.project-card:hover {
+  transform: scale(1.03);
+}
+.project-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.project-info {
+  padding: 20px;
+}
+.project-info h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #fff;
+}
+.project-info p {
+  font-size: 14px;
+  color: #aaa;
+}
+.tags {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.tags span {
+  background: #1a1a1a;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #00d4ff;
+  border: 1px solid #00d4ff;
+}
+
+/* Modal */
+.project-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(15, 15, 15, 0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  padding: 30px;
+}
+.project-modal.active {
+  display: flex;
+}
+.modal-content {
+  max-width: 700px;
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-height: 400px;
+  object-fit: cover;
+}
+.modal-content h3 {
+  margin-bottom: 10px;
+  color: #00d4ff;
+}
+.modal-content p {
+  font-size: 15px;
+  color: #ccc;
+}
+.modal-content .tags {
+  justify-content: center;
+  margin-top: 15px;
+}
+.close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 20px;
+  }
+
+  .modal-content img {
+    max-height: 300px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}

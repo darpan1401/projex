@@ -1,1 +1,69 @@
-<p>projects works!</p>
+<section class="projects-section" id="portfolio">
+  <div class="container">
+    <h2 class="section-title">Our Projects</h2>
+    <p class="section-subtitle">Explore some of the final year projects we've built with modern technologies.</p>
+
+    <div class="projects-grid">
+      <!-- Project Card -->
+      <div class="project-card" onclick="openModal('modal1')">
+        <img src="project1.jpg" alt="Project 1">
+        <div class="project-info">
+          <h3>AI Chatbot</h3>
+          <p>Built using Python & Flask for real-time student queries.</p>
+          <div class="tags">
+            <span>Python</span><span>Flask</span><span>AI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Another Project -->
+      <div class="project-card" onclick="openModal('modal2')">
+        <img src="project2.jpg" alt="Project 2">
+        <div class="project-info">
+          <h3>Fitness Tracker</h3>
+          <p>Web-based tracker for steps, calories, and goals.</p>
+          <div class="tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more project cards as needed -->
+    </div>
+  </div>
+
+  <!-- Modals -->
+  <div class="project-modal" id="modal1">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <img src="project1.jpg" alt="Project 1 Full">
+      <h3>AI Chatbot</h3>
+      <p>This chatbot answers student queries in real time using natural language processing and Python’s Flask framework.</p>
+      <div class="tags">
+        <span>Python</span><span>Flask</span><span>AI</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="project-modal" id="modal2">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <img src="project2.jpg" alt="Project 2 Full">
+      <h3>Fitness Tracker</h3>
+      <p>A fitness tracker that lets users log workouts, steps, and calories, built using vanilla HTML, CSS, and JS.</p>
+      <div class="tags">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  function openModal(id) {
+    document.getElementById(id).classList.add('active');
+  }
+
+  function closeModal(id) {
+    document.getElementById(id).classList.remove('active');
+  }
+</script>
