@@ -28,10 +28,16 @@ export class DevelopersComponent {
       skills: ["Python", "Django", "MySQL", "REST API"]
     },
     {
-      name: "Priya Nair",
-      role: "Mobile App Developer",
-      image: "dev1.jpg",
-      skills: ["Flutter", "Firebase", "Dart", "Android"]
+      name: "Mihir Varu",
+      role: "Frontend Developer",
+      image: "dev3.PNG",
+      skills: ["JavaScript","React Js","Next JS"]
+    },
+    {
+      name: "Pranav ",
+      role: "Frontend Developer",
+      image: "devp.jpeg",
+      skills: ["Java","SQL","JavaScript","React Js","Next JS"]
     }
   ];
 }
