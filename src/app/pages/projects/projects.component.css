@@ -1,7 +1,7 @@
 /* Projects Section */
 .projects-section {
   padding: 80px 0;
-  background-color: #0f0f0f;
+  background: linear-gradient(to right, #1c1c2b, #0f0f1a);
   color: #fff;
 }
 .section-title {

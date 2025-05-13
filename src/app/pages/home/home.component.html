@@ -2,7 +2,8 @@
   <div class="hero-content">
     <h1>Transform Your Final Year with <span>Projex</span></h1>
     <p>Affordable, industry-relevant final year projects tailored for you.</p>
-    <a routerLink="/projects" class="btn-primary">Explore Projects</a>
+    <a [routerLink]="['project']" class="btn-primary">Explore Projects</a>
+
   </div>
 </section>
 
@@ -23,14 +24,13 @@
 
 <section class="cta">
   <h2>Ready to make your project stand out?</h2>
-  <a routerLink="/contact" class="btn-secondary">Contact Us</a>
+  <a [routerLink]="['contact']" class="btn-secondary">Contact Us</a>
 </section>
 
 <section class="more-info">
   <div class="info-container">
     <h2>Why Choose Projex?</h2>
     <p>We are committed to empowering students with quality final year projects that impress evaluators and enhance learning.</p>
-
     <div class="highlight-cards">
       <div class="card">
         <h3>Expert Developers</h3>

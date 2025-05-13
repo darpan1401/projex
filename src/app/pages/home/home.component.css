@@ -1,15 +1,4 @@
-/* Global Styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: 'Arial', sans-serif;
-  background-color: #121212;
-  color: #fff;
-}
 
 a {
   text-decoration: none;
@@ -48,8 +37,8 @@ h2, h3 {
 }
 
 .btn-primary {
-  background-color: #eac531;
-  color: #111019;
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #fff;
   padding: 0.8rem 1.6rem;
   font-weight: 600;
   border-radius: 8px;
@@ -59,7 +48,7 @@ h2, h3 {
 }
 
 .btn-primary:hover {
-  background-color: #cfae2f;
+  transform: scale(1.05);
 }
 
 /* Features Section */
@@ -89,7 +78,7 @@ h2, h3 {
 }
 
 .feature h3 {
-  color: #eac531;
+  color: #00d4ff;
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
 }
@@ -110,13 +99,12 @@ h2, h3 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
   font-family: 'Playfair Display', serif;
-  color: #eac531;
+  color: #00d4ff;
 }
 
 .btn-secondary {
-  background: transparent;
-  color: #eac531;
-  border: 2px solid #eac531;
+  background: linear-gradient(135deg, #ff6a00, #ee0979);
+  color: #fff;
   padding: 0.6rem 1.2rem;
   border-radius: 8px;
   font-weight: 600;
@@ -125,8 +113,7 @@ h2, h3 {
 }
 
 .btn-secondary:hover {
-  background: #eac531;
-  color: #181828;
+  transform: scale(1.05);
 }
 
 /* More Info Section */
@@ -137,7 +124,7 @@ h2, h3 {
 }
 
 .more-info h2 {
-  color: #eac531;
+  color: #00d4ff;
   font-family: 'Playfair Display', serif;
   margin-bottom: 1rem;
 }
@@ -171,7 +158,7 @@ h2, h3 {
 }
 
 .card h3 {
-  color: #eac531;
+  color: #00d4ff;
   margin-bottom: 0.5rem;
 }
 

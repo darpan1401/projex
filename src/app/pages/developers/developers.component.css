@@ -1,0 +1,135 @@
+/* Developers Page CSS */
+
+.developers-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1c1c2b, #0f0f1a);
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #00d4ff;
+  letter-spacing: 1px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 17px;
+  color: #bbbbbb;
+  margin-bottom: 60px;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.developer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.developer-item {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  background: rgba(255, 255, 255, 0.035);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 212, 255, 0.04);
+  transition: transform 0.3s ease, background 0.3s ease;
+  border-left: 4px solid #00d4ff;
+}
+
+.developer-item:hover {
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-5px);
+}
+
+.developer-image img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  /* border: 3px solid #ffffff; */
+  transition: transform 0.3s ease;
+}
+
+.developer-item:hover .developer-image img {
+  transform: scale(1.05);
+}
+
+.developer-info {
+  flex: 1;
+}
+
+.developer-info h3 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.developer-info .role {
+  font-size: 15px;
+  color: #ffc14d;
+  margin: 6px 0 16px 0;
+  font-weight: 500;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills span {
+  background: #14141f;
+  border: 1px solid #00d4ff;
+  color: #00d4ff;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: background 0.3s ease;
+}
+
+.skills span:hover {
+  background: #00d4ff;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+  .developer-item {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px;
+  }
+
+  .developer-image img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .developer-info h3 {
+    font-size: 20px;
+  }
+
+  .skills {
+    justify-content: center;
+  }
+
+  .skills span {
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+}

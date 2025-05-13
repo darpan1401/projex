@@ -1,0 +1,198 @@
+/* Contact Section */
+.contact-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #0f0f1a, #1c1c2b);
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Header */
+.contact-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.contact-logo {
+  font-size: 40px;
+  color: #00d4ff;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.contact-header h2 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #00d4ff;
+}
+
+.contact-header p {
+  font-size: 16px;
+  color: #cccccc;
+  margin: 4px 0;
+  line-height: 1.6;
+}
+
+.contact-header a {
+  color: #ffc14d;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-header a:hover {
+  text-decoration: underline;
+}
+
+/* Form Container */
+.contact-form-container {
+  max-width: 650px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 10px 35px rgba(0, 212, 255, 0.08);
+  border-left: 5px solid #00d4ff;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form-container input,
+.contact-form-container textarea {
+  background: #14141f;
+  border: 1px solid #00d4ff;
+  color: #ffffff;
+  padding: 14px 18px;
+  font-size: 16px;
+  border-radius: 12px;
+  outline: none;
+  transition: all 0.3s ease;
+  resize: none;
+}
+
+.contact-form-container input:focus,
+.contact-form-container textarea:focus {
+  background: #1f1f2e;
+  border-color: #ffc14d;
+  box-shadow: 0 0 0 2px rgba(255, 193, 77, 0.3);
+}
+
+/* Submit Button */
+.contact-form-container button[type="submit"] {
+  background: linear-gradient(to right, #00d4ff, #00a6e0);
+  color: #000;
+  font-size: 17px;
+  padding: 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.contact-form-container button[type="submit"]:hover {
+  background: linear-gradient(to right, #00b8e6, #0088c6);
+  transform: scale(1.02);
+}
+
+/* Error Text */
+.error {
+  font-size: 13px;
+  color: #ff6b6b;
+  margin-top: -12px;
+}
+
+/* Loading Overlay */
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 15, 26, 0.95);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00d4ff;
+  font-size: 22px;
+  font-weight: 600;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* WhatsApp Button */
+.whatsapp-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 12px; /* Adjusted padding to make the button circular */
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.6);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  z-index: 1000; /* Ensures the button stays on top of other elements */
+  height: 50px;
+  width: 50px; /* Ensures the button is a perfect circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp-floating a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+
+.whatsapp-floating:hover {
+  background-color: #5bff6b;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.9);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 60px 15px;
+  }
+
+  .contact-header h2 {
+    font-size: 30px;
+  }
+
+  .contact-form-container {
+    padding: 25px;
+  }
+
+  .contact-form-container input,
+  .contact-form-container textarea {
+    font-size: 15px;
+    padding: 12px 16px;
+  }
+
+  .contact-form-container button[type="submit"] {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  .whatsapp-floating {
+    padding: 15px; /* Adjusted padding for smaller screens */
+    bottom: 10px;
+    right: 10px;
+  }
+}

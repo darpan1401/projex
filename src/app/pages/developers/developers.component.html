@@ -1,1 +1,23 @@
-<p>developers works!</p>
+<section class="developers-section">
+  <div class="container">
+    <h2 class="section-title">Meet Our Developers</h2>
+    <p class="section-subtitle">
+      The brilliant minds shaping the future of Projex. Each developer brings a unique skillset, passion, and vision to the table.
+    </p>
+
+    <div class="developer-list">
+      <div class="developer-item" *ngFor="let dev of developers">
+        <div class="developer-image">
+          <img [src]="dev.image" [alt]="dev.name">
+        </div>
+        <div class="developer-info">
+          <h3>{{ dev.name }}</h3>
+          <p class="role">{{ dev.role }}</p>
+          <div class="skills">
+            <span *ngFor="let skill of dev.skills">{{ skill }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,14 +1,5 @@
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background: #0f0f0f;
-  font-family: 'Poppins', sans-serif;
-  color: #fff;
+.about-section {
+  background: linear-gradient(to right, #1c1c2b, #0f0f1a);
 }
 
 /* Container */
